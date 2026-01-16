@@ -16,7 +16,7 @@ userControllers.get("/", (req: Request, res: Response) => {
  * GET BY ID
  */
 userControllers.get("/:id", (req: Request, res: Response) => {
-    const userId = parseInt(req.params.id);
+    const userId = parseInt(`${req.params.id}`);
 
     if (!isNumber(userId)) {
         return res.status(400).send("The provided ID is not a valid format");
@@ -102,7 +102,7 @@ userControllers.put("/", (req: Request, res: Response) => {
  * DELETE users
  */
 userControllers.delete("/:id", (req: Request, res: Response) => {
-    const idUser = parseInt(req.params.id);
+    const idUser = parseInt(`${req.params.id}`);
 
     if (!isNumber(idUser)) {
         return res.status(400).send("Id is not a number");

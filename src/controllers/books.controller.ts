@@ -56,7 +56,7 @@ booksController.get("/", (req: Request, res: Response) => {
  * Return 400 if the id invalid, 404 if the book is not found
  */
 booksController.get("/:id", (req: Request, res: Response) => {
-    const idBook = parseInt(req.params.id);
+    const idBook = parseInt(`${req.params.id}`);
 
     if (!isNumber(idBook)) {
         return res.status(400).send("Id is not a number");
@@ -137,7 +137,7 @@ booksController.put("/", (req: Request, res: Response) => {
  * Returns 400 if the Id is invalid, 404 if the book is not found
  */
 booksController.delete("/:id", (req: Request, res: Response) => {
-    const idBook = parseInt(req.params.id);
+    const idBook = parseInt(`${req.params.id}`);
 
     if (!isNumber(idBook)) {
         return res.status(400).send("Id is not a number");
