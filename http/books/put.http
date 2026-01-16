@@ -1,0 +1,12 @@
+### PUT : Update a book
+
+PUT http://localhost:8080/books/
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "tu",
+    "author": "z9",
+    "year": 99,
+    "genre": "g9"
+}

@@ -1,0 +1,2 @@
+### DELETE a book
+DELETE http://localhost:8080/books/1

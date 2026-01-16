@@ -1,0 +1,11 @@
+@base = http://localhost:8080/books/
+
+POST {{base}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "t4",
+    "author": "a4",
+    "year": 2025,
+    "genre": "g4"
+}

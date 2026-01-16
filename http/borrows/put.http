@@ -1,0 +1,10 @@
+### Extend the return date of a  borrow
+PUT http://localhost:8080/borrows/extend/1
+Content-Type: application/json
+
+{
+    "return_date": "2025-12-31"
+}
+
+### return a borrow
+PUT http://localhost:8080/borrows/return/6

@@ -1,0 +1,10 @@
+### Create a new borrow
+POST http://localhost:8080/borrows/
+Content-Type: application/json
+
+{
+    "book": 7, 
+    "user": 3,
+    "borrowing_date" : "2025-10-30",
+    "return_date": "2025-11-15"
+}

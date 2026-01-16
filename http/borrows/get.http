@@ -1,0 +1,8 @@
+### Get all borrows
+GET http://localhost:8080/borrows
+
+### Get borrows by user id
+GET http://localhost:8080/borrows/user/1
+
+### Get borrows by id
+GET http://localhost:8080/borrows/2

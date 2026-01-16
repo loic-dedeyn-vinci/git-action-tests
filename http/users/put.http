@@ -1,0 +1,11 @@
+
+### PUT update user
+PUT http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Bob Updated",
+  "email": "bob_updated@mail.com",
+  "borrowHistory": []
+}
